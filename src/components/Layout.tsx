@@ -2,7 +2,6 @@ import { Outlet, useLocation } from 'react-router';
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import './Layout.css'
-import HbMenu from './HbMenu';
 
 export default function Layout(){
 

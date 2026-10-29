@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import './GameCard.css';
 
-async function getServerStatus(URL) {
+async function getServerStatus(URL: string) {
 
     // get the api response
     // if no response, exit function. it will just say "fetching...." forever
@@ -29,7 +29,7 @@ async function getServerStatus(URL) {
     }
 }
 
-export default function GameCard({ name, URL }) {
+export default function GameCard({ name, URL } : {name:string, URL:string}) {
 
     const [serverStatus, setServerStatus] = useState('Retrieving...');
     const [motd, setMotd] = useState('N/A');
