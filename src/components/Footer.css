@@ -1,0 +1,33 @@
+footer{
+
+    text-align: center;
+
+    padding-top:20px;
+    padding-bottom:20px;
+
+    .socials{
+
+        .socialIcon{
+            all:unset;
+            width:64px;
+            height:64px;
+            color: gray;
+            transition:color 0.5s;
+        }
+
+        .socialIcon::before{
+            all:unset;
+        }
+
+        * {
+            width:64px;
+        }
+
+        .socialIcon:hover{
+            color:white;
+            transition:color 0.5s;
+        }
+
+    }
+
+}

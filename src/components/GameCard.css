@@ -1,0 +1,69 @@
+.gameCard {
+
+
+    width: 75%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(27, 0, 90);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 20px rgb(26, 26, 26);
+
+    margin-top: 10px;
+
+
+    .serverImage {
+
+        min-width: 40%;
+        text-align: center;
+
+        img {
+            width: 128px;
+            height: 128px;
+            border-radius: 20px;
+        }
+    }
+
+
+    .gameDetails {
+
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        min-width: 60%;
+
+        .online {
+            color: greenyellow;
+        }
+
+        .offline {
+            color: red;
+        }
+
+
+    }
+
+
+}
+
+@media only screen and (max-width:765px) {
+
+    .gameCard {
+        width: 95%;
+
+        .serverImage {
+            max-width: 20%;
+
+            img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+
+}

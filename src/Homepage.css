@@ -1,0 +1,18 @@
+.homePage {
+
+    text-align: center;
+
+    img{
+        border-radius: 10px;
+    }
+
+}
+
+@media only screen and (max-width:765px) {
+    .homePage {
+        img {
+            width: 100%;
+        }
+    }
+
+}

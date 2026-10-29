@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+}
+
+
+
+:root {
+  --navigation-bar-height: 75px;
+  --default-page-width: 1280px;
+  --font-family: Poppins, Roboto, Open Sans, ui-sans-serif, system-ui, sans-serif;
+
+
+  color-scheme: light dark;
+
+  background-color: light-dark(#ffffff, #0d0d14);
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+
+
+  span {
+    position: fixed;
+    
+    transform:rotate(315deg);
+    z-index:-999;
+    /* animation:  5s linear infinite animate; */
+    
+  }
+
+  span::before {
+    content: '';
+    position: fixed;
+    width: 300px;
+    height: 10px;
+    /* top:100vh; */
+    /* left:100vw; */
+    background: linear-gradient(90deg, #333333, transparent);
+    z-index: -999;
+    /* animation:  5s linear infinite animate; */
+    animation:  5s linear infinite animate;
+
+  }
+
+}
+
+@keyframes animate {
+
+  100% {
+    /* transform: translate(-100vh, -100vh); */
+
+    transform: translateX(calc(  -115vh * sqrt(2)))
+  }
+
+}
+
+
+
+
+main {
+
+  max-width: var(--default-page-width);
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: calc(var(--navigation-bar-height) + 15px);
+
+
+}
+
+main > *, footer > * {
+
+    animation: slide-up 1s;
+
+}
+
+@keyframes slide-up {
+    0%{
+        transform:translateY(100px);
+        opacity:0;
+    }
+}
