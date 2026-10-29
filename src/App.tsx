@@ -13,7 +13,7 @@ export default function App() {
     <>
 
       <Background></Background>
-      <BrowserRouter>
+      <BrowserRouter basename='/mikewolfo-dev'>
         <Routes>
 
           <Route path='/' element={<Layout />}>
